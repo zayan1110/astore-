@@ -20,18 +20,24 @@ class Shop extends ChangeNotifier {
 
     // Product 3
     Product(
-      name: "Product3",
-      price: 99.99,
+      name: "shirt",
+      price: 60.0,
       descripition: "Item description",
       imagePath: 'https://oldnavy.gap.com/webcontent/0050/590/576/cn50590576.jpg',
     ),
 
     // Product 4
     Product(
-      name: "Product4",
-      price: 99.99,
+      name: "glasses",
+      price: 50.5,
       descripition: "Item description",
       imagePath: 'https://i.pinimg.com/originals/5c/ae/b1/5caeb16f96e2555267862957c5bfe0c7.jpg',
+    ),
+     Product(
+      name: "coach",
+      price: 500.0,
+      descripition: "Item description",
+      imagePath: 'https://i.pinimg.com/originals/df/0f/18/df0f18d9020e9e75956df3ab1d696621.jpg',
     ),
   ];
 

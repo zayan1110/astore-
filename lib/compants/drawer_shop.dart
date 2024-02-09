@@ -2,8 +2,8 @@ import 'package:astore_app/compants/my_list_tile.dart';
 import 'package:flutter/material.dart';
 
 
-class MyDrawer extends StatelessWidget {
-  const MyDrawer({super.key});
+class DrawerShop extends StatelessWidget {
+  const DrawerShop({super.key});
 
   @override
   Widget build(BuildContext context) {

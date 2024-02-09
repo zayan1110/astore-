@@ -1,5 +1,5 @@
 
-import 'package:astore_app/compants/My_Button.dart';
+import 'package:astore_app/compants/custom_button.dart';
 import 'package:astore_app/compants/models/product.dart';
 import 'package:astore_app/compants/models/shop.dart';
 import 'package:flutter/material.dart';
@@ -7,8 +7,8 @@ import 'package:provider/provider.dart';
 
 
 
-class Cart_Page extends StatelessWidget {
-  const Cart_Page({super.key});
+class CartPage extends StatelessWidget {
+  const CartPage({super.key});
 void removeItemFromCart(BuildContext context,Product product){
 showDialog(
     context: context,
@@ -91,7 +91,7 @@ trailing: IconButton(
 ),
 Padding(
   padding:  EdgeInsets.all(50),
-  child:   My_Button(
+  child:   CustomButton(
   
     onTap: ()=>payButtonPres(context),
   
