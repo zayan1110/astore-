@@ -5,10 +5,7 @@ class MyListTile extends StatelessWidget {
   final IconData icon;
   final void Function()? onTap;
   const MyListTile(
-      {super.key,
-       required this.text, 
-       required this.icon, 
-       required this.onTap});
+      {super.key, required this.text, required this.icon, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

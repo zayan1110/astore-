@@ -7,7 +7,8 @@ class Shop extends ChangeNotifier {
       name: "ًًWatch",
       price: 150.55,
       descripition: "Item descripition.. more descripition.....",
-      imagePath: 'https://th.bing.com/th/id/R.ef2b531a9dc81b72aa3036dcc9e11c19?rik=%2fdIpsaHadtZrNw&pid=ImgRaw&r=0',
+      imagePath:
+          'https://th.bing.com/th/id/R.ef2b531a9dc81b72aa3036dcc9e11c19?rik=%2fdIpsaHadtZrNw&pid=ImgRaw&r=0',
     ),
 
     // Product 2
@@ -15,7 +16,8 @@ class Shop extends ChangeNotifier {
       name: "BOOts",
       price: 99.99,
       descripition: "Item description",
-      imagePath: 'https://content.backcountry.com/images/items/1200/KEN/KEN00LR/BK_D1.jpg',
+      imagePath:
+          'https://content.backcountry.com/images/items/1200/KEN/KEN00LR/BK_D1.jpg',
     ),
 
     // Product 3
@@ -23,7 +25,8 @@ class Shop extends ChangeNotifier {
       name: "shirt",
       price: 60.0,
       descripition: "Item description",
-      imagePath: 'https://oldnavy.gap.com/webcontent/0050/590/576/cn50590576.jpg',
+      imagePath:
+          'https://oldnavy.gap.com/webcontent/0050/590/576/cn50590576.jpg',
     ),
 
     // Product 4
@@ -31,13 +34,15 @@ class Shop extends ChangeNotifier {
       name: "glasses",
       price: 50.5,
       descripition: "Item description",
-      imagePath: 'https://i.pinimg.com/originals/5c/ae/b1/5caeb16f96e2555267862957c5bfe0c7.jpg',
+      imagePath:
+          'https://i.pinimg.com/originals/5c/ae/b1/5caeb16f96e2555267862957c5bfe0c7.jpg',
     ),
-     Product(
+    Product(
       name: "coach",
       price: 500.0,
       descripition: "Item description",
-      imagePath: 'https://i.pinimg.com/originals/df/0f/18/df0f18d9020e9e75956df3ab1d696621.jpg',
+      imagePath:
+          'https://i.pinimg.com/originals/df/0f/18/df0f18d9020e9e75956df3ab1d696621.jpg',
     ),
   ];
 

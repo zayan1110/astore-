@@ -1,35 +1,32 @@
 import 'package:astore_app/compants/models/product.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'models/shop.dart';
 
 class MyProductTile extends StatelessWidget {
   final Product product;
-
   MyProductTile({super.key, required this.product});
-
-void addToCart(BuildContext context) {
-  showDialog(
-    context: context,
-    builder: (context) => AlertDialog(
-      title: Text("Add This Item to Your Cart?"),
-      actions: [
-        MaterialButton(
-          onPressed: () => Navigator.pop(context),
-          child: Text("Cancel"),
-        ),
-        MaterialButton(
-          onPressed: () {
-            Navigator.pop(context);
-            context.read<Shop>().addToCart(product);
-          },
-          child: Text("Yes"),
-        ),
-      ],
-    ),
-  );
-}
+  void addToCart(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text("Add This Item to Your Cart?"),
+        actions: [
+          MaterialButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text("Cancel"),
+          ),
+          MaterialButton(
+            onPressed: () {
+              Navigator.pop(context);
+              context.read<Shop>().addToCart(product);
+            },
+            child: Text("Yes"),
+          ),
+        ],
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,8 +42,7 @@ void addToCart(BuildContext context) {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AspectRatio(
                 aspectRatio: 1,
@@ -85,17 +81,16 @@ void addToCart(BuildContext context) {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('\$'+product.price.toStringAsFixed(2)),
+              Text('\$' + product.price.toStringAsFixed(2)),
               Container(
-decoration: BoxDecoration(
-  color: Colors.white,
-  borderRadius: BorderRadius.circular(12),
-  ),
-
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
                 child: IconButton(
-                  icon:Icon (Icons.add),
-                  onPressed:() =>addToCart(context),
-                   ),
+                  icon: Icon(Icons.add),
+                  onPressed: () => addToCart(context),
+                ),
               )
             ],
           ),

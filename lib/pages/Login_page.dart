@@ -1,9 +1,8 @@
 import 'package:astore_app/compants/custom_button.dart';
 import 'package:flutter/material.dart';
 
-class StoreLoginPage extends StatelessWidget {
-  const StoreLoginPage({super.key});
-
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +39,7 @@ class StoreLoginPage extends StatelessWidget {
               height: 25,
             ),
             CustomButton(
-              onTap: () => Navigator.pushNamed(context, '/Shop Page'),
+              onTap: () => Navigator.pushNamed(context, '/ShopPage'),
               child: Icon(Icons.arrow_forward),
             )
           ],
